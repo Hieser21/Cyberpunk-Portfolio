@@ -1,0 +1,37 @@
+.container{
+    font-family: "arial";
+    font-size: 15px;
+    display: grid;
+    place-items: center;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .typed {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 7.5s steps(20, end) infinite, blinking .5s infinite;
+  }
+    
+  @keyframes typing {
+    0% { width:0 }
+    25% { width: 70% }
+    48% { width: 100% }
+    50% { width: 100% }
+    55% { width: 100% }
+    75% { width: 70%; }
+    85% { width: 30%; }
+    100% { width: 0; }
+  }
+  
+  @keyframes blinking {
+    0% {border-color: transparent}
+    50% {border-color: aqua}
+    100% {border-color: transparent}
+  }
+  
