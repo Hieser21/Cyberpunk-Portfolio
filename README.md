@@ -9,5 +9,7 @@
 
 ### Live Site
 
-[Cyberpunk](https://643fa1ecbde4fe7935d7df29--luminous-speculoos-b3aff2.netlify.app/)
+[Cyberpunk](https://cyberpunk-portfolio.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/936842e2-7598-4d78-82ce-5df598021eb0/deploy-status)](https://app.netlify.com/sites/cyberpunk-portfolio/deploys)
  
