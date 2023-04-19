@@ -11,7 +11,7 @@ const App = () => (
       <Puffs>
         <div style={{padding: 20 }}>
           <Header animate>
-            <h3 style={{ margin: 0,display: 'flex', alignItems: "center", justifyContent: "center", fontFamily:"Space Crusaders", fontSize: "40px"}}> &#8249;&#8249; Cyberpunk Portfolio &#8250;&#8250;</h3>
+            <h3 style={{ margin: 0,display: 'flex', alignItems: "center", justifyContent: "center", fontFamily:"Space Crusaders", fontSize: "25px"}}> &#8249;&#8249; Cyberpunk Portfolio &#8250;&#8250;</h3>
           </Header>
         </div>
         <div style={{ display: 'flex', padding: '20px', alignItems: "center", justifyContent: "center" }}>
