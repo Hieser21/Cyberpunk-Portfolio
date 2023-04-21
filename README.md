@@ -1,6 +1,6 @@
 # Cyberpunk-Portfolio
 
-![loficity](https://user-images.githubusercontent.com/53094729/233308770-4e783e61-b1ba-4f6e-8fd6-cb679c4bdbcf.gif)
+![cyberpunk](https://user-images.githubusercontent.com/53094729/233573531-7a1b9fbc-5596-4940-a88d-1127e5831cac.gif)
 
 
 ### Tecnologies Used
