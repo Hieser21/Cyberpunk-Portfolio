@@ -17,7 +17,7 @@ const App = () => {
 
 return (
   <ThemeProvider theme={createTheme()}>
-    <Arwes background='https://playground.arwes.dev/assets/images/wallpaper.jpg'>
+    <Arwes>
       <ToastContainer />
       <Puffs>
         <div style={{padding: 20 }}>
