@@ -1,13 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { useEffect } from 'react';
 import { ThemeProvider, createTheme, Arwes, Image, Frame, Puffs, Words, Line, Link, Button, Logo, Paragraph, Header} from 'arwes';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './style.css';
 
+const App = () => {
+  useEffect(() => {
+    toast.info('Welcome to Cyberpunk Portfolio', {
+      position: toast.POSITION.TOP_CENTER,
+      autoClose: 5000,
+      className: 'toast-custom-background',
+    });
+  }, []);
 
-
-const App = () => (
+return (
   <ThemeProvider theme={createTheme()}>
     <Arwes background='https://playground.arwes.dev/assets/images/wallpaper.jpg'>
+      <ToastContainer />
       <Puffs>
         <div style={{padding: 20 }}>
           <Header animate>
@@ -40,6 +51,7 @@ const App = () => (
     </Arwes>
   </ThemeProvider>
 );
+};
 
 
 ReactDOM.render(<App />, document.querySelector('#root'));
