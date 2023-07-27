@@ -1,9 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { useEffect } from 'react';
-import { ThemeProvider, createTheme, Arwes, Image, Frame, Puffs, Words, Line, Link, Button, Logo, Paragraph, Header} from 'arwes';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ThemeProvider, createTheme, Arwes, Frame, Line, Link, Button, Header} from 'arwes';
 import './style.css';
 import {Animator} from '@arwes/react-animator'
 import { GridLines, Dots, MovingLines } from '@arwes/react-bgs';
@@ -17,7 +14,7 @@ return (
     <Animator duration={{ interval: 10 }}>
       <div style={{
         position: 'absolute',
-        height: '160%',
+        height: '140%',
         left: 0,
         right: 0,
         top: 0,
@@ -38,13 +35,8 @@ return (
           distance={50}
           sets={20}
         />
-        <div style={{padding: 20 }}>
-          <Header animate>
-            <h3 style={{ margin: 0,display: 'flex', alignItems: "center", justifyContent: "center", fontFamily:"Space Crusaders", fontSize: "25px"}}> &#8249;&#8249; Cyberpunk Portfolio &#8250;&#8250;</h3>
-          </Header>
-        </div>
         <div style={{ display: 'flex', padding: '20px', alignItems: "center", justifyContent: "center" }}>
-          <Frame level={3} corners={4} animate={true} layer='primary'>
+          <Frame style={{width: '400px'}} level={3} corners={4} animate={true} layer='primary'>
             <div style={{ margin: '0 auto', padding: 20, maxWidth: 600 }}>
               <Line animate layer='disabled' />
               <div className='container'>
