@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -40,4 +41,42 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script>
+      $('.node-email-form').on('submit', function(event) {
+  event.preventDefault()
+    
+    const $form = $('.node-email-form')
+    
+  $.ajax({
+    url: '/email',
+    type:'POST',
+    data: $form.serialize()
+  }).done(response => {
+    console.log(response)
+  })
+    $('.loading').addClass('d-block')
+    setTimeout(function() {
+    $('.loading').removeClass('d-block')
+   }, 1000)
+   $('.node-email-form').on('error', function() {
+   $('.loading').removeClass('d-block')
+     $('.error-message').addClass('d-block')
+     
+     setTimeout(function() {
+    $('.error-message').removeClass('d-block')
+    },5000)
+   })
+      setTimeout(function() {
+    $('.sent-message').addClass('d-block')
+     },1000)
+         setTimeout(function() { 
+    $('.sent-message').removeClass('d-block')
+   },5000)
+  
+    setTimeout(function() { 
+    $('.node-email-form').trigger("reset");
+    },6000)
+  })
+  </script>
 </html>

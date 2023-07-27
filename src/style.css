@@ -1,43 +1,16 @@
-.container{
-    font-family: "arial";
-    font-size: 15px;
-    display: grid;
-    place-items: center;
-    width: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
 
-  .toast-custom-background {
-    background: aqua !important;
-    font-family:"Space Crusaders" !important;
-    font-size: 20px !important;
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
   }
-  
-  .typed {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 2px solid;
-    width: 0;
-    animation: typing 7.5s steps(20, end) infinite, blinking .5s infinite;
+  .button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
   }
-    
-  @keyframes typing {
-    0% { width:0 }
-    25% { width: 70% }
-    48% { width: 100% }
-    50% { width: 100% }
-    55% { width: 100% }
-    75% { width: 70%; }
-    85% { width: 30%; }
-    100% { width: 0; }
-  }
-  
-  @keyframes blinking {
-    0% {border-color: transparent}
-    50% {border-color: aqua}
-    100% {border-color: transparent}
-  }
-  
